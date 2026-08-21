@@ -59,7 +59,7 @@ plot.data <- plotDispPDF(dispAll)
 ## ----plot all disp (not norm)-------------------------------------------------
 # Create a probability density function (pdf) plot of raw (i.e., not 
 # normalised) displacements
-plot.data.norm <- plotDispPDF(dispAll, normalised=FALSE)
+plot.data.norm <- plotDispPDF(dispAll, normalise=FALSE)
 
 ## ----calc disp over 24 hours--------------------------------------------------
 # Calculate displacements over 24 ± 6 hours
@@ -69,7 +69,7 @@ disp <- calcDisp(tracks, max_hr=24)
 summary(unlist(disp))
 
 # Plot displacements (as displacements were only calculated over one time window they do not need to be normalised)
-plot.data.pdf <- plotDispPDF(disp, normalised=FALSE)
+plot.data.pdf <- plotDispPDF(disp, normalise=FALSE)
 
 ## ----fit full dist------------------------------------------------------------
 # Fit all distributions to the full range of displacement data 

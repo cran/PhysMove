@@ -11,10 +11,11 @@ knitr::opts_chunk$set(dev = "png",
  
 
 ## ----installation, eval=FALSE-------------------------------------------------
-# # Install the devtools package from CRAN (if required)
-# install.packages("devtools")
+# # Option 1: Download the stable version from CRAN
+# install.packages("PhysMove")
 # 
-# # Download the development version from GitHub:
+# # Option 2: Download the development version from GitHub
+# install.packages("devtools")
 # devtools::install_github("HannahCalich/PhysMove", build_vignettes = TRUE)
 
 ## ----load physmove------------------------------------------------------------
